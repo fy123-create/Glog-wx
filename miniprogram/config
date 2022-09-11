@@ -1,0 +1,59 @@
+import { THEME_SETTING_KEY } from '../services/const-data/theme-setting-key'
+
+const ApiBaseUrl = 'https://nofear.org.cn'
+
+const Config = {
+  AccessKey: '0617', // 接口key，必填
+  cloudEnv: 'cloud1-2gwz8ei1a2497130', // 云环境ID
+  themeSettingsCache: false
+}
+
+const themeSettings = {
+  [THEME_SETTING_KEY.BLOG_TITLE]: '',
+  [THEME_SETTING_KEY.BLOG_LOGO]: '',
+  [THEME_SETTING_KEY.GUESTBOOK_SHEET_ID]: 2,
+  [THEME_SETTING_KEY.CLOUD_IS_OPEN]: false,
+  [THEME_SETTING_KEY.CLOUD_ENV]: 'cloud_env',
+  [THEME_SETTING_KEY.CLOUD_SHARE_OPEN]: false,
+  [THEME_SETTING_KEY.CLOUD_CHECK_MESSAGE]: false,
+  [THEME_SETTING_KEY.CLOUD_ADMIN_USER]: false,
+  // 关于页面中个人信息，置空不显示
+  [THEME_SETTING_KEY.BLOG]: 'https://www.geekera.cn',
+  [THEME_SETTING_KEY.QQ]: '59210983',
+  [THEME_SETTING_KEY.WX]: '59210983',
+  [THEME_SETTING_KEY.MAIL]: 'zes@qq.com',
+  [THEME_SETTING_KEY.GITHUB]: 'https://github.com/fuzui',
+  [THEME_SETTING_KEY.GITEE]: 'https://gitee.com/fuzui',
+  [THEME_SETTING_KEY.WX_MP]: '',
+  // 无内容占位图
+  [THEME_SETTING_KEY.NO_CONTENT_IMAGE]: 'no_content_image',
+  // 占位图
+  [THEME_SETTING_KEY.PLACEHOLDER_IMAGE]: '',
+  // 加载失败占位图
+  [THEME_SETTING_KEY.LOAD_ERROR_IMAGE]: 'load_error_image',
+  // 随机图,分号隔开
+  [THEME_SETTING_KEY.RANDOM_IMAGE]: '',
+  // 样式
+  [THEME_SETTING_KEY.POST_TAG_STYLE]: '',
+  [THEME_SETTING_KEY.POST_CONTAINER_STYLE]: '',
+  [THEME_SETTING_KEY.COMMENT_TAG_STYLE]: '',
+  [THEME_SETTING_KEY.COMMENT_CONTAINER_STYLE]: '',
+  [THEME_SETTING_KEY.JOURNAL_TAG_STYLE]: '',
+  [THEME_SETTING_KEY.JOURNAL_CONTAINER_STYLE]: '',
+  // 分页信息
+  [THEME_SETTING_KEY.SWIPER_START]: 0,
+  [THEME_SETTING_KEY.PAGE_SIZE_SWIPER]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_INDEX]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_SEARCH]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_CATEGORY]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_TAG]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_PHOTO]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_JOURNAL]: 6,
+  [THEME_SETTING_KEY.PAGE_SIZE_ATTACHMENT]: 6
+}
+
+module.exports = {
+  ApiBaseUrl,
+  Config,
+  themeSettings
+}
